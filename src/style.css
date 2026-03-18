@@ -1,28 +1,25 @@
-html {
-  box-sizing: border-box;
-}
-
 body {
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  padding: 22px;
-  line-height: 0;
 }
 
 .stars {
   display: flex;
-  width: 96px;
-  height: calc(116px / 6);
+  margin: 0;
+  padding: 0;
 }
 
 .stars__star {
-  width: calc(96px / 5);
-  height: 100%;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
   background-image: url('./images/star.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 16px;
+  background-size: 13px 12px;
+}
+
+.stars__star:last-child {
+  margin-right: 0;
 }
 
 .stars--1 .stars__star:nth-child(-n + 1),
